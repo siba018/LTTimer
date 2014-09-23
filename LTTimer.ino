@@ -19,7 +19,7 @@ void loop(){
   startTime = millis();
   while(((millis()-startTime)<=300000) && (LOW == digitalRead(btnPin))){
     digitalWrite(ledPin,HIGH);
-    if(endFlg==0 && ((millis()-startTime)>=180000)){
+    if(endFlg==0 && ((millis()-startTime)>=240000)){
       digitalWrite(bellPin,HIGH);
       delay(50);
       digitalWrite(bellPin,LOW);
